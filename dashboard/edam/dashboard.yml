@@ -1,56 +1,58 @@
 base_generated: true
 base_prefixes:
-- CBO
-- CBOALT
+- EDAM
+- EDAMALT
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1319
-    DataPropertyRange: 1
-    Declaration: 323
-    DisjointClasses: 64
-    FunctionalDataProperty: 16
-    ReflexiveObjectProperty: 9
-    SubClassOf: 244
-    SubObjectPropertyOf: 8
-    TransitiveObjectProperty: 15
-  'Axioms: Number of axioms': 1999
-  'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 34
-  'Entities: Number of classes': 246
-  'Entities: Number of data properties': 16
+    AnnotationAssertion: 26188
+    Declaration: 3550
+    DisjointClasses: 14
+    InverseObjectProperties: 6
+    ObjectPropertyDomain: 11
+    ObjectPropertyRange: 11
+    SubAnnotationPropertyOf: 10
+    SubClassOf: 5137
+  'Axioms: Number of axioms': 34927
+  'Entities: % of entities reused': 99.75
+  'Entities: Number of annotation properties': 70
+  'Entities: Number of classes': 3473
+  'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 25
+  'Entities: Number of object properties': 12
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 959
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 13799
+    ObjectSomeValuesFrom: 589
+    ObjectUnionOf: 2
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.889
     _formula: (3*impact+2*dashboard)/5
     _impact: 0.0
     _impact_external: 0
-    _reuse: 1.0
+    _reuse: 0.998
     oboscore: 0.356
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
-  'Info: Syntax': OWL/XML Syntax
+  'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    dc11: 766
-    oboInOwl: 74
-    owl: 1
-    prefix_unknown: 1163
-    rdf: 1
-    rdfs: 406
-    xsd: 2
+    EDAMALT: 19
+    dc11: 4
+    foaf: 1
+    obo: 78
+    oboInOwl: 14659
+    owl: 2233
+    prefix_unknown: 19017
+    rdfs: 4726
   'Info: Which ontologies use it?':
-  - cbo
-mirror_from: http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO.owl
-namespace: cbo
+  - edam
+mirror_from: http://edamontology.org/EDAM.owl
+namespace: edam
 results:
   FP01 Open:
-    comment: Missing ontology license.
+    comment: Missing ontology license. Missing registry license.
     status: ERROR
   FP02 Common Format:
     status: PASS
@@ -88,7 +90,7 @@ results:
       INFO: 0
       WARN: 0
     status: ERROR
-sha256_hash: 188fcacc21122c50ca7838a476e65ad83a5109f24d067d9e2824bd1588ef1ece
+sha256_hash: 0adf6d4d122ff1e8aa69d25a6b58231cad61c0875354a8af84dd431d8f108669
 summary:
   comment: 6 errors
   status: ERROR

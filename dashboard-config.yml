@@ -7,12 +7,120 @@ ontologies:
     - id: edam
       mirror_from: "http://edamontology.org/EDAM.owl"
       title: "EDAM: ontology for software"
+      base_ns: 
+        - http://edamontology.org/
+        - http://edamontology.org#
       contact:
         email: fortuna@ebd.csic.es
         label: Miguel A. Fortuna
       description: "OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment)."
       domain: digital evolution, a branch of Artificial Life.
       homepage: https://github.com/edamontology/edamontology
+    - id: opc
+      title: Ontology of Process Chemistry
+      mirror_from: "https://raw.githubusercontent.com/OPC-ontology/OPC/master/src/ontology/opc.owl"
+      contact:
+        email: wes_schafer@merck.com
+        label: Wes Schafer
+      description: OPC covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.
+      domain: process chemistry
+      homepage: https://github.com/OPC-ontology/OPC
+      products:
+        - id: opc.owl
+        - id: opc.obo
+      dependencies:
+        - id: ro
+        - id: obi
+        - id: chebi
+        - id: pato
+        - id: cheminf
+        - id: sbo
+      tracker: https://github.com/OPC-ontology/OPC/issues
+      license:
+        url: http://creativecommons.org/licenses/by/4.0/
+        label: CC-BY
+      usages:
+        - user: Merck & Co.
+          description: pharmaceutical API development
+        - user: Allotrope
+          description: important domain in pharmaceutical industry
+    - mirror_from: "https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/main/src/ontology/disease_drivers.owl"
+      id: disdriv
+      title: The Disease Drivers Ontology
+      contact:
+        email: lschriml@som.umaryland.edu
+        label: Lynn Schriml
+      description: Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors.
+      domain: health
+      homepage: https://github.com/DiseaseOntology/DiseaseDriversOntology
+      products:
+        - id: disdriv.owl
+        - id: disdriv.obo
+      dependencies:
+        - id: ENVO
+        - id: CHEBI
+        - id: ExO
+        - id: ECTO
+        - id: OMIT
+        - id: DRON
+        - id: NCIT
+        - id: FOODON
+        - id: FOBI
+        - id: HP
+        - id: ZECO
+        - id: GSSO
+      tracker: https://github.com/DiseaseOntology/DiseaseDriversOntology/issues 
+      license:
+        url: https://creativecommons.org/publicdomain/zero/1.0/
+        label: CC0
+      usages:
+        - user: https://www.disease-ontology.org
+          description: The Human Disease Ontology will import DISDRIV to define disease drivers and triggers via logical definitions.  
+    - id: epso
+      mirror_from: "https://raw.githubusercontent.com/phwegner/Epilepsyontology/main/release/EPSO_merged.owl"
+      title: Epilepsy Eontology
+      contact:
+        email: philipp.wegner@scai.fraunhofer.de
+        label: Philipp Wegner
+      description: Ontology for Epilepsy disease
+      domain: epilepsy
+      homepage: https://github.com/phwegner/Epilepsyontology
+      products:
+        - id: EPSO.owl
+        - id: EPSO_merged.owl
+      tracker: https://github.com/phwegner/Epilepsyontology/issues
+      license:
+        url: http://creativecommons.org/licenses/by/4.0/
+        label: CC-BY
+      usages:
+        - user: https://github.com/phwegner/Epilepsyontology
+          description: See development section
+    - id: ontoavida
+      mirror_from: "https://gitlab.com/fortunalab/ontoavida/-/raw/development/ontoavida.owl"
+      title: "OntoAvida: ontology for Avida digital evolution platform"
+      contact:
+        email: fortuna@ebd.csic.es
+        label: Miguel A. Fortuna
+      description: "OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment)."
+      domain: digital evolution, a branch of Artificial Life.
+      homepage: https://gitlab.com/fortunalab/ontoavida
+      products:
+        - id: ontoavida.owl
+        - id: ontoavida.obo
+      dependencies:
+        - id: fbcv
+        - id: gsso
+        - id: ogg
+        - id: stato
+        - id: ro
+        - id: ncit
+      tracker: https://gitlab.com/fortunalab/ontoavida/-/issues
+      license:
+        url: http://creativecommons.org/licenses/by/4.0/
+        label: CC-BY
+      usages:
+        - user: http://website.of.the.project.using.my.ontology.com
+          description: A short description of how the project above is using my ontology
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
